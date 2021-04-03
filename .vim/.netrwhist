@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/noah/.config/dwm'
+let g:netrw_dirhist_5='/home/noah/.config'
+let g:netrw_dirhist_4='/home/noah/.config/dwm'
+let g:netrw_dirhist_3='/drives/school/Chemestry/module-8-current'
+let g:netrw_dirhist_2='/home/noah/.i3'
+let g:netrw_dirhist_1='/home/noah/.config/eDEX-UI/Session Storage'

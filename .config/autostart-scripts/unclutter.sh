@@ -1,0 +1,1 @@
+/home/noah/Documents/scripts/unclutter.sh
