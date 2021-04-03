@@ -162,7 +162,6 @@ fi
 #fi
 
 
-
 #Starship prompt script
 eval "$(starship init bash)"
 
