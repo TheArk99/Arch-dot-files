@@ -63,7 +63,7 @@ filetype indent on
 
 let python_highlight_all = 1
 
-:highlight LineNr ctermfg=grey
+:highlight LineNr ctermfg=green
 
 set laststatus=2
  
