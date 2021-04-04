@@ -18,3 +18,6 @@ alias nms="nms -acf green"
 
 #df is now always human readable
 alias df="df -h"
+
+#alias for screenfetch which will allow for system colors on a fetch util
+alias screenfetch="screenfetch -N"
