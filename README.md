@@ -1,7 +1,7 @@
 # dwm-dot-files My personal configs installed needed apps:
 
 <h2>My personal configs installed needed apps:</h2>
-youtube-dl zathura zsh w3m webkit2gtk wireless_tools wpa_supplicant alsa-utils zip vlc unclutter unzip ttf-font-awesome sxiv ranger python-pip python3 pulseaudio pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack zathura-pdf-poppler picom os-prober pciutils nitrogen networkmanager network-manager-applet neofetch mpv minizip m4 htop highlight gzip gvim gtk2 gtk3 gparted gnome-keyring exa lsd bat dunst doge clipit cmatrix bluez-utils bluez awesome-terminal-fonts alsa-utils lsof imagemagick
+youtube-dl zathura zsh w3m webkit2gtk wireless_tools wpa_supplicant alsa-utils zip vlc unclutter unzip ttf-font-awesome sxiv ranger python-pip python3 pulseaudio pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack zathura-pdf-poppler picom os-prober pciutils nitrogen networkmanager network-manager-applet neofetch mpv minizip m4 htop highlight gzip gvim gtk2 gtk3 gparted gnome-keyring exa lsd bat dunst doge clipit cmatrix bluez-utils bluez awesome-terminal-fonts alsa-utils lsof imagemagick lxappearance
 
 
 <h3>Configs depenendent github repos:</h3>
