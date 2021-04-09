@@ -13,42 +13,42 @@ XTerm*selectToClipboard: true
 
 
 ! special
-*.foreground:   #76d37f
-*.background:   #111111
-*.cursorColor:  #76d37f
-
+*.foreground:   #a7a7a7
+*.background:   #1e1e1e
+*.cursorColor:  #a7a7a7
 
 ! black
-*.color0:       #1d1f21
-*.color8:       #969896
+*.color0:       #1e1e1e
+*.color8:       #5f5a60
 
 ! red
-*.color1:       #cc342b
-*.color9:       #cc342b
+*.color1:       #cf6a4c
+*.color9:       #cf6a4c
 
 ! green
-*.color2:       #76d37f
-*.color10:      #76d37f
+*.color2:       #8f9d6a
+*.color10:      #8f9d6a
 
 ! yellow
-*.color3:       #fba922
-*.color11:      #fba922
+*.color3:       #f9ee98
+*.color11:      #f9ee98
 
 ! blue
-*.color4:       #3971ed
-*.color12:      #3971ed
+*.color4:       #7587a6
+*.color12:      #7587a6
 
 ! magenta
-*.color5:       #a36ac7
-*.color13:      #a36ac7
+*.color5:       #9b859d
+*.color13:      #9b859d
 
 ! cyan
-*.color6:       #16b4c9
-*.color14:      #16b4c9
+*.color6:       #afc4db
+*.color14:      #afc4db
 
 ! white
-*.color7:       #c5c8c6
+*.color7:       #a7a7a7
 *.color15:      #ffffff
+
 
 
 Xcursor.size:                     0
@@ -65,7 +65,7 @@ URxvt.depth:                      32
 !URxvt.background:                 [100]#222D31
 
 !for transparency
-URxvt*background: rgba:0000/0000/0200/c800
+!URxvt*background: rgba:0000/0000/0200/c800
 
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
