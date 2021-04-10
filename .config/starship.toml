@@ -1,9 +1,7 @@
 [git_branch]
-style = "green"
 symbol = " "
 
 [directory]
-style = "green"
 read_only = " "
 
 
