@@ -1,5 +1,10 @@
 source $VIMRUNTIME/defaults.vim
 
+call plug#begin('~/.vim/pack/')
+
+"Plug 'vim-airline'
+
+call plug#end()
 
 " :W sudo saves the file when the file is open in readonly mode
 command W w !sudo tee % > /dev/null
@@ -67,11 +72,6 @@ let python_highlight_all = 1
 
 set laststatus=2
  
-"personal status line
-"set statusline=
-"set statusline+=%#LineNr
-"set statusline+=\ %f
-
 "stolen staus line
 function! GitBranch()
   return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
