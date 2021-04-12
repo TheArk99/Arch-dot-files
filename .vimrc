@@ -1,9 +1,24 @@
 source $VIMRUNTIME/defaults.vim
 
-call plug#begin('~/.vim/pack/')
+let mapleader =","
 
-"Plug 'vim-airline'
+if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME}/.vim/autoload/plug.vim"'))
+	echo "Downloading junegunn/vim-plug to manage plugins..."
+	silent !mkdir -p ${XDG_CONFIG_HOME:-$HOME}/.vim/autoload/
+	silent !curl "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" > ${XDG_CONFIG_HOME:-$HOME}/.vim/autoload/plug.vim
+	autocmd VimEnter * PlugInstall
+endif
 
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'junegunn/goyo.vim'
+Plug 'jreybert/vimagit'
+Plug 'lukesmithxyz/vimling'
+Plug 'vimwiki/vimwiki'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-commentary'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 " :W sudo saves the file when the file is open in readonly mode
@@ -24,7 +39,7 @@ set expandtab
 " 1 tab = 2 spaces
 set tabstop=2 shiftwidth=2
 
-" when deleting whitespace at the beginning of a line, delete 
+" when deleting whitespace at the beginning of a line, delete
 " 1 tab worth of spaces (for us this is 2 spaces)
 set smarttab
 
@@ -70,8 +85,39 @@ let python_highlight_all = 1
 
 :highlight LineNr ctermfg=green
 
+" Nerd tree
+	map <C-n> :NERDTreeToggle<CR>
+	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+    if has('nvim')
+        let NERDTreeBookmarksFile = stdpath('data') . '/NERDTreeBookmarks'
+    else
+        let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
+    endif
+
+" Automatically deletes all trailing whitespace and newlines at end of file on save.
+	autocmd BufWritePre * %s/\s\+$//e
+	autocmd BufWritePre * %s/\n\+\%$//e
+	autocmd BufWritePre *.[ch] %s/\%$/\r/e
+
+" When shortcut files are updated, renew bash and ranger configs with new material:
+	autocmd BufWritePost bm-files,bm-dirs !shortcuts
+" Run xrdb whenever Xdefaults or Xresources are updated.
+	autocmd BufRead,BufNewFile Xresources,Xdefaults,xresources,xdefaults set filetype=xdefaults
+	autocmd BufWritePost Xresources,Xdefaults,xresources,xdefaults !xrdb %
+
+" Save file as sudo on files that require root permission
+	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
+" Enable autocompletion:
+	set wildmode=longest,list,full
+" Disables automatic commenting on newline:
+	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+
+
+
 set laststatus=2
- 
+
 "stolen staus line
 function! GitBranch()
   return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
@@ -95,4 +141,4 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-set statusline+=\ 
+set statusline+=\
