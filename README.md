@@ -12,7 +12,7 @@ https://github.com/TheArk99/surf
 
 https://github.com/TheArk99/dwm
 
-https://github.com/TheArk99/Doc-files
+https://github.com/TheArk99/Doc-files -This is some of my personal scripts and random Doc files of mine
 
 https://github.com/TheArk99/slstatus
 
@@ -23,6 +23,8 @@ https://github.com/TheArk99/fonts
 https://github.com/TheArk99/dmenu
 
 https://github.com/TheArk99/wallpapers
+
+https://github.com/TheArk99/URxvt-perl-extensions.git
 
 
 <h4>Sites to install other programs i like to have:</h4>
