@@ -1,7 +1,7 @@
 #!/bin/sh
 
 xrdb ~/.Xresources &
-nitrogen --restore &
+#nitrogen --restore &
 picom &
 slstatus &
 xrdb .Xresources &
