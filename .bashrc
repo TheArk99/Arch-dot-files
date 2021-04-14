@@ -193,3 +193,12 @@ cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
+
+#adds support to dmenu
+# Import the colors.
+. "${HOME}/.cache/wal/colors.sh"
+
+# Create the alias.
+alias dmenu_recency='dmenu_recency -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+
+alias dmenu_run='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
