@@ -202,3 +202,7 @@ source ~/.cache/wal/colors-tty.sh
 alias dmenu_recency='dmenu_recency -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
 
 alias dmenu_run='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+
+
+#trying to make pywal work with zathura
+export PATH="/home/noah/.local/bin:$PATH"
