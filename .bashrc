@@ -1,7 +1,7 @@
-# ____    _    ____  _   _ ____   ____ 
+# ____    _    ____  _   _ ____   ____
 #| __ )  / \  / ___|| | | |  _ \ / ___|
-#|  _ \ / _ \ \___ \| |_| | |_) | |    
-#| |_) / ___ \ ___) |  _  |  _ <| |___ 
+#|  _ \ / _ \ \___ \| |_| | |_) | |
+#| |_) / ___ \ ___) |  _  |  _ <| |___
 #|____/_/   \_\____/|_| |_|_| \_\\____|
 #
 # ~/.bashrc
@@ -172,7 +172,7 @@ export EDITOR=vim
 #personal command to call vim mode
 #set -o vi
 
-#suggested python thingy 
+#suggested python thingy
 PYTHONPATH=$HOME/lib/python
 EDITOR=vim
 
@@ -180,3 +180,16 @@ export PYTHONPATH EDITOR
 
 #unlimited Histsize
 export HISTSIZE=""
+
+#pywal settings
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+# Not supported in the "fish" shell.
+(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh

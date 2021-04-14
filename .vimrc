@@ -11,6 +11,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
+Plug 'dylanaraps/wal.vim'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'jreybert/vimagit'
@@ -20,6 +21,8 @@ Plug 'bling/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
 call plug#end()
+
+colorscheme wal
 
 " :W sudo saves the file when the file is open in readonly mode
 command W w !sudo tee % > /dev/null
@@ -83,7 +86,8 @@ filetype indent on
 
 let python_highlight_all = 1
 
-:highlight LineNr ctermfg=green
+"turns the line numbers to green
+":highlight LineNr ctermfg=green
 
 " Nerd tree
 	map <C-n> :NERDTreeToggle<CR>

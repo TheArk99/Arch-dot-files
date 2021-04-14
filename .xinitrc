@@ -7,5 +7,5 @@ slstatus &
 xrdb .Xresources &
 unclutter -idle 1 &
 dunst &
+wal -R
 exec dwm > ~/.dwm.log
-
