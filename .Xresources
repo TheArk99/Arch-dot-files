@@ -65,7 +65,10 @@ URxvt.depth:                      32
 !URxvt.background:                 [100]#222D31
 
 !for transparency
-!URxvt*background: rgba:0000/0000/0200/c800
+URxvt*background: rgba:0000/0000/0200/c800
+!for fake trans
+!URxvt*transparent: true
+!URxvt*shading: 40
 
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
@@ -99,4 +102,3 @@ URxvt.keysym.C-question:  resize-font:show
 ! URxvt.keysym.M-C-c:               perl:clipboard:copy
 ! URxvt.keysym.M-v:                 perl:clipboard:paste
 ! URxvt.keysym.M-C-v:               perl:clipboard:paste_escaped
-
