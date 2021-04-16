@@ -65,7 +65,7 @@ URxvt.depth:                      32
 !URxvt.background:                 [100]#222D31
 
 !for transparency
-URxvt*background: rgba:0000/0000/0200/c800
+!URxvt*background: rgba:0000/0000/0200/c800
 !for fake trans
 !URxvt*transparent: true
 !URxvt*shading: 40
