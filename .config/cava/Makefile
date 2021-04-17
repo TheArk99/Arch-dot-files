@@ -93,7 +93,7 @@ bin_PROGRAMS = cava$(EXEEXT)
 #am__append_1 = -DNORT
 am__append_2 = -lrt
 am__append_3 = input/alsa.c
-#am__append_4 = input/portaudio.c
+am__append_4 = input/portaudio.c
 am__append_5 = input/pulse.c
 #am__append_6 = input/sndio.c
 am__append_7 = output/terminal_ncurses.c
@@ -119,7 +119,7 @@ am__cava_SOURCES_DIST = cava.c config.c input/common.c input/fifo.c \
 	output/terminal_ncurses.c iniparser/libiniparser.la
 am__dirstamp = $(am__leading_dot)dirstamp
 am__objects_1 = input/cava-alsa.$(OBJEXT)
-#am__objects_2 = input/cava-portaudio.$(OBJEXT)
+am__objects_2 = input/cava-portaudio.$(OBJEXT)
 am__objects_3 = input/cava-pulse.$(OBJEXT)
 #am__objects_4 = input/cava-sndio.$(OBJEXT)
 am__objects_5 = output/cava-terminal_ncurses.$(OBJEXT)
@@ -311,7 +311,7 @@ AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CPPFLAGS =  -DNDEBUG -DHAVE_ALLOCA_H -DALSA -DPULSE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -DNCURSES
+CPPFLAGS =  -DNDEBUG -DHAVE_ALLOCA_H -DALSA -DPULSE -DPORTAUDIO -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -DNCURSES
 CURSES_CONFIG = /usr/bin/ncursesw6-config
 CYGPATH_W = echo
 DEFS = -DPACKAGE_NAME=\"cava\" -DPACKAGE_TARNAME=\"cava\" -DPACKAGE_VERSION=\"0.7.3\" -DPACKAGE_STRING=\"cava\ 0.7.3\" -DPACKAGE_BUGREPORT=\"karl@stavestrand.no\" -DPACKAGE_URL=\"\" -DPACKAGE=\"cava\" -DVERSION=\"0.7.3\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_PTHREAD_H=1 -DHAVE_CURSES_H=1 -DHAVE_INIPARSER_H=1
@@ -335,7 +335,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -liniparser  -lpthread -lasound -lpulse-simple -lpulse -lm -lfftw3 -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now -lncursesw -liniparser
+LIBS = -liniparser  -lpthread -lasound -lpulse-simple -lpulse -lportaudio -lm -lfftw3 -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now -lncursesw -liniparser
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
