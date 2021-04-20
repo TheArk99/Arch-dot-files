@@ -32,3 +32,6 @@ PYTHONPATH=$HOME/lib/python
 EDITOR=vim
 
 export PYTHONPATH EDITOR
+
+#DT'S colorscript random color startup
+colorscript random
