@@ -24,9 +24,6 @@ fi
 # changeing default text editor to vim
 export EDITOR=vim
 
-#personal command to call vim mode
-#set -o vi
-
 #suggested python thingy
 PYTHONPATH=$HOME/lib/python
 EDITOR=vim
@@ -34,4 +31,4 @@ EDITOR=vim
 export PYTHONPATH EDITOR
 
 #DT'S colorscript random color startup
-colorscript random
+#colorscript random
