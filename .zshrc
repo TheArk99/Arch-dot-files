@@ -1,3 +1,17 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=900000000000000
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/noah/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+
 #starship prompt
 eval "$(starship init zsh)"
 
@@ -18,11 +32,3 @@ PYTHONPATH=$HOME/lib/python
 EDITOR=vim
 
 export PYTHONPATH EDITOR
-
-
-alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
-alias more=less
-
