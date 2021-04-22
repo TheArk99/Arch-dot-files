@@ -1,2 +1,2 @@
 Print
-  scrot
+  scrot '%Y-%m-%d.png' && mogrify -format jpg *.png && rm -rf *.png
