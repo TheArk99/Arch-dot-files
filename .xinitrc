@@ -1,5 +1,6 @@
 #!/bin/sh
 
+sxhkd &
 xrdb ~/.Xresources &
 #nitrogen --restore &
 picom &
