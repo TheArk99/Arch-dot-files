@@ -1,3 +1,0 @@
-#!/bin/dash
-
-doas pacman -Syy
