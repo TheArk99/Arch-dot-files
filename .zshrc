@@ -55,3 +55,5 @@ setopt auto_list
 #export PROMPT='%B%F{yellow}%~>%b%f '
 # END zsh data
 # put your code here
+
+colorscript random
