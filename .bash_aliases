@@ -23,4 +23,4 @@ alias df="df -h"
 alias screenfetch="screenfetch -N"
 
 #alias for command
-alias lsf="find  -maxdepth 1 -type f > files.txt | sed 's/^..// ; s/files.txt//'"
+alias lsf="find  -maxdepth 1 -type f | sed 's/^..//'"
