@@ -21,3 +21,6 @@ alias df="df -h"
 
 #alias for screenfetch which will allow for system colors on a fetch util
 alias screenfetch="screenfetch -N"
+
+#alias for command
+alias lsf="find  -maxdepth 1 -type f > files.txt | sed 's/^..// ; s/files.txt//'"
