@@ -130,7 +130,6 @@ gc
 gcab
 gcc
 gcc-libs
-gcr
 gd
 gdbm
 gdk-pixbuf2
@@ -163,7 +162,6 @@ go
 go-tools
 gobject-introspection
 gobject-introspection-runtime
-gparted
 gpgme
 gpm
 graphene
@@ -612,7 +610,6 @@ libnftnl
 libnghttp2
 libnl
 libnm
-libnma
 libnotify
 libnsl
 libnumbertext
@@ -775,11 +772,9 @@ neon
 neovim
 netpbm
 nettle
-network-manager-applet
 networkmanager
 ninja
 nitrogen
-nm-connection-editor
 nmap
 node-gyp
 nodejs-lts-erbium
