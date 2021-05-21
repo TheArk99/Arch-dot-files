@@ -346,6 +346,7 @@ json-c
 json-glib
 jsoncpp
 kbd
+keepassxc
 keyutils
 kmod
 krb5
@@ -911,6 +912,7 @@ python-webencodings
 python-xlib
 python-yaml
 qhull
+qrencode
 qt5-3d
 qt5-base
 qt5-charts
@@ -951,6 +953,7 @@ qt5-webview
 qt5-x11extras
 qt5-xmlpatterns
 qt5ct
+quazip
 ranger
 raptor
 rasqal
@@ -1126,6 +1129,9 @@ xxhash
 xz
 yajl
 youtube-dl
+yubico-c
+yubico-c-client
+yubikey-personalization
 zathura
 zathura-pdf-poppler
 zenity
