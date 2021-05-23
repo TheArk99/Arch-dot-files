@@ -24,3 +24,9 @@ alias screenfetch="screenfetch -N"
 
 #alias for command
 alias lsf="find  -maxdepth 1 -type f | sed 's/^..//'"
+
+#allias for listing all users
+#alias LU="cat /etc/passwd | awk -F: '{print $1}'"
+
+#alias for listing all groups
+#alias LG="cat /etc/group | awk -F: '{print $1}'"
