@@ -57,3 +57,6 @@ setopt auto_list
 # put your code here
 
 colorscript random
+
+#this is to make zsh preform more like bash in that it does not show % at the end of unfinished printed lines
+unsetopt prompt_cr prompt_sp
