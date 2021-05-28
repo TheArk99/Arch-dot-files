@@ -2,7 +2,7 @@ Print
   scrot '%Y-%m-%d.png' && mogrify -format jpg *.png && rm -rf *.png
 
 XF86Calculator
-  exec urxvt bash -e bc -l
+  exec urxvt bash -e bc -l | sed '/\./ s/\.\{0,1\}0\{1,\}$//'
 
 Scroll_Lock
   simplescreenrecorder
