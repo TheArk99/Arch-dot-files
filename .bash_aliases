@@ -30,3 +30,6 @@ alias lsf="find  -maxdepth 1 -type f | sed 's/^..//'"
 
 #alias for listing all groups
 #alias LG="cat /etc/group | awk -F: '{print $1}'"
+
+#alias for tty-clock to be how i want it
+alias ty-clock="tty-clock -c -t -s"
