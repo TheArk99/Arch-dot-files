@@ -881,6 +881,7 @@ python-mako
 python-markdown
 python-markupsafe
 python-matplotlib
+python-more-itertools
 python-msgpack
 python-numpy
 python-ordered-set
