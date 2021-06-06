@@ -39,6 +39,7 @@ blas
 bluez-libs
 boost-libs
 box2d
+bpytop
 brave-bin
 bridge-utils
 brotli
@@ -516,7 +517,6 @@ libbluray
 libbsd
 libcaca
 libcanberra
-libcanberra-pulse
 libcap
 libcap-ng
 libcddb
@@ -525,6 +525,7 @@ libcdio-paranoia
 libcdr
 libcloudproviders
 libcmis
+libcolord
 libconfig
 libcroco
 libcups
@@ -846,6 +847,7 @@ portaudio
 potrace
 procps-ng
 proton
+proton-ge-custom-bin
 psmisc
 pugixml
 pulseaudio
