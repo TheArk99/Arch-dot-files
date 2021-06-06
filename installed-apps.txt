@@ -744,6 +744,7 @@ luajit
 lutris
 lxappearance
 lxmenu-data
+lynx
 lz4
 lzo
 m4
