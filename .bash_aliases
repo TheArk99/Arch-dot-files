@@ -33,3 +33,6 @@ alias lsf="find  -maxdepth 1 -type f | sed 's/^..//'"
 
 #alias for tty-clock to be how i want it
 alias ty-clock="tty-clock -c -t -s"
+
+#alias for starting Xorg with my random wallpapper script
+alias startx-wall="./Documents/scripts/wall-rand && startx"
