@@ -206,3 +206,6 @@ alias dmenu_run='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$colo
 
 #trying to make pywal work with zathura
 export PATH="/home/noah/.local/bin:$PATH"
+
+#my default browser
+export BROWSER=/bin/brave
