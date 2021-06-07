@@ -31,7 +31,7 @@ command W w !sudo tee % > /dev/null
 " Line
 """"""""""""""""""""""""""""""""""""
 " show line numbers
-:set number
+:set number relativenumber
 
 
 """""""""""""""""""""""""""""""""""""
