@@ -2,6 +2,7 @@
 <img src="riced-current.jpg">
 <img src="riced.jpg">
 <img src="ricedDragon.jpg">
+<img src="2021-06-06.jpg">
 
 <h3>My Dot Files and how to use them:</h2>
 These are my personal arch config files, they are a bit messy but they are good for me and my workflow, these configs use PyWal so you can easily change wall pappers and get a good looking theme to, it also uses dwm, dmenu, slstatus, and some other suckless software. if you install all the dependencies for my dot files then you should be able to compile choose a wal papper by wal -i <walpapper.whereYouHaveIt>, and then if you have my scripts set up you can either do a "sudo compileSuckless" command or go the the doc-files directory and go to scripts and do "./compileSuckless". Do that and get the other dependencies and you should be up and running. If you have and problems or if you have suggestions which i galdly will take, because i am still pretty new to this, contact me at noahfrmc@gmail.com.
