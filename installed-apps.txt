@@ -30,6 +30,7 @@ awesome-terminal-fonts
 babl
 base
 bash
+bashtop
 bat
 bc
 bcg729
