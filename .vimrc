@@ -146,3 +146,6 @@ set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\
+
+"to stop highlighting the search query
+nnoremap <silent> <C-l> :nohl<CR><C-l>
