@@ -23,12 +23,15 @@ fi
 
 source $HOME/.bash_aliases
 
-# changeing default text editor to nvim
-export EDITOR=nvim
+#my default browser
+export BROWSER=/bin/brave
+
+# changeing default text editor to vim
+export EDITOR=vim
 
 #suggested python thingy
 PYTHONPATH=$HOME/lib/python
-EDITOR=nvim
+EDITOR=vim
 
 export PYTHONPATH EDITOR
 
@@ -60,6 +63,3 @@ colorscript random
 
 #this is to make zsh preform more like bash in that it does not show % at the end of unfinished printed lines
 unsetopt prompt_cr prompt_sp
-
-#my default browser
-export BROWSER=/bin/brave

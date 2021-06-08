@@ -43,4 +43,4 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 #alias for nvim to be vim for ease of use
-alias vim='nvim'
+#alias vim='nvim'
