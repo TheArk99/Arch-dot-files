@@ -5,11 +5,11 @@ alias clock="/home/noah/Documents/scripts/./clock.sh"
 
 
 #exa into ls (colorful ls)
-alias ls="exa"
+#alias ls="exa"
 
 
 #alternitive ls with pictures ada lsd
-#alias ls="lsd"
+alias ls="lsd"
 
 
 #no more secrets flags
