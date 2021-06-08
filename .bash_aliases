@@ -44,3 +44,6 @@ alias fgrep='fgrep --color=auto'
 
 #alias for nvim to be vim for ease of use
 #alias vim='nvim'
+
+#alias for getting the current wallpapper when using wall-rand
+alias current-wall='sxiv $(cat Documents/scripts/wall-rand/current-wallpapper.txt)'
