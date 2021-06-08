@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/opt/shell-color-scripts/colorscripts'
+let g:netrw_dirhist_4='/home/noah/.cache/dmenu-recent'
+let g:netrw_dirhist_3='/home/noah/Documents/.git'
+let g:netrw_dirhist_2='/home/noah/.config/slstatus'
+let g:netrw_dirhist_1='/home/noah/.config/dunst'
