@@ -23,12 +23,12 @@ fi
 
 source $HOME/.bash_aliases
 
-# changeing default text editor to vim
-export EDITOR=vim
+# changeing default text editor to nvim
+export EDITOR=nvim
 
 #suggested python thingy
 PYTHONPATH=$HOME/lib/python
-EDITOR=vim
+EDITOR=nvim
 
 export PYTHONPATH EDITOR
 

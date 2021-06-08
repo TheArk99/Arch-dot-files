@@ -36,3 +36,11 @@ alias lsf="find  -maxdepth 1 -type f | sed 's/^..//'"
 
 #alias for starting Xorg with my random wallpapper script
 #alias startx-wall="./Documents/scripts/wall-rand && startx"
+
+#grep aliases
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+#alias for nvim to be vim for ease of use
+alias vim='nvim'
