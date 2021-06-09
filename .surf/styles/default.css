@@ -1,0 +1,13 @@
+/* Import the CSS file.
+   Change 'dylan' to your username. */
+@import url('file:///home/noah/.cache/wal/colors.css');
+
+/* Use the variables */
+#nav-bar {
+  background-image: var(--wallpaper);
+  color: var(--color7) !important;
+}
+
+h1 {
+  background-color: var(--color3);
+}
