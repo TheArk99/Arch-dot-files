@@ -329,6 +329,7 @@ hunspell
 hwids
 hwloc
 hyphen
+i2c-tools
 iana-etc
 icu
 iftop
@@ -345,6 +346,7 @@ jack
 jansson
 jasper
 jbig2dec
+jp2a
 jq
 js78
 json-c
@@ -731,6 +733,7 @@ linux
 linux-api-headers
 linux-firmware
 linux-headers
+liquidctl
 llvm-libs
 lm_sensors
 lmdb
@@ -786,6 +789,7 @@ nitrogen
 nmap
 node-gyp
 nodejs-lts-erbium
+nodejs-nopt
 npm
 npth
 nspr
@@ -865,6 +869,7 @@ python-cairo
 python-cffi
 python-chardet
 python-colorama
+python-colorlog
 python-contextlib2
 python-cryptography
 python-cycler
@@ -872,10 +877,12 @@ python-dateutil
 python-distlib
 python-distro
 python-dnspython
+python-docopt
 python-docutils
 python-evdev
 python-future
 python-gobject
+python-hidapi
 python-html5lib
 python-idna
 python-injector
@@ -904,6 +911,7 @@ python-pyopenssl
 python-pyparsing
 python-pyqt5
 python-pyqt5-sip
+python-pyusb
 python-pywal
 python-pyxdg
 python-requests
