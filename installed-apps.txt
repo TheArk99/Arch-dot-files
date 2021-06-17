@@ -1084,6 +1084,7 @@ xcb-util-image
 xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
+xclip
 xdg-dbus-proxy
 xdg-user-dirs
 xdg-utils
