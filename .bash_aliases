@@ -47,3 +47,6 @@ alias fgrep='fgrep --color=auto'
 
 #alias for getting the current wallpapper when using wall-rand
 alias current-wall='sxiv $(cat $(locate current-wallpapper.txt))'
+
+#alias for doas being sudo so i do not forget doas and instead use sudo
+alias sudo="doas"
