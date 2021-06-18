@@ -844,6 +844,7 @@ picom
 pinentry
 pixman
 pkgconf
+playerctl
 polkit
 poppler
 poppler-data

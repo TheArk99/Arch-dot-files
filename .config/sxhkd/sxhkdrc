@@ -6,3 +6,29 @@ XF86Calculator
 
 Scroll_Lock
   simplescreenrecorder
+
+XF86AudioPlay
+  playerctl play-pause
+
+XF86Back
+  playerctl previoius
+
+XF86Forward
+  playerctl next
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume 1 +5%
+
+XF86AudioLowerVolume
+  pactl set-sink-volume 1 -5%
+
+XF86AudioMute
+  pactl set-sink-mute 1 toggle
+
+XF86Search
+  dmenu-search
+
+XF86Mail
+  $BROWSER https://mail.google.com/mail/u/0/#inbox
+
+XF86HomePage
