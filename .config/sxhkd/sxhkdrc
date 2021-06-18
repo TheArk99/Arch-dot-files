@@ -10,20 +10,21 @@ Scroll_Lock
 XF86AudioPlay
   playerctl play-pause
 
+
 XF86Back
-  playerctl previous
+  playerctl previous && notify-send "NOW PLAYING PREVIOUS SONG: $(playerctl metadata --format "{{ artist }} - {{ album }} - {{ title }}")"
 
 XF86Forward
-  playerctl next
+  playerctl next && notify-send "NOW PLAYING NEXT SONG: $(playerctl metadata --format "{{ artist }} - {{ album }} - {{ title }}")"
 
 XF86AudioRaiseVolume
-  pactl set-sink-volume 1 +5%
+  pactl set-sink-volume 1 +5% && notify-send " VOLUME UP +5%"
 
 XF86AudioLowerVolume
-  pactl set-sink-volume 1 -5%
+  pactl set-sink-volume 1 -5% && notify-send " VOLUME DOWN -5%"
 
 XF86AudioMute
-  pactl set-sink-mute 1 toggle
+  Mute
 
 XF86Search
   dmenu-search
