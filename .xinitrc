@@ -8,6 +8,7 @@ slstatus &
 unclutter -idle 1 &
 dunst &
 wal -R &
+whatIsPlayingNow &
 setxkbmap -option caps:swapescape &
 rm -rf ~/.local/share/weatherreport &
 rm -rf ~/.local/share/moonphase &

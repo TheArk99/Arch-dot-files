@@ -12,16 +12,16 @@ XF86AudioPlay
 
 
 XF86Back
-  playerctl previous && notify-send "NOW PLAYING PREVIOUS SONG: $(playerctl metadata --format "{{ artist }} - {{ album }} - {{ title }}")"
+  playerctl previous #&& notify-send "NOW PLAYING PREVIOUS SONG: $(whatIsPlaying | sed 's/Now playing: //g')"
 
 XF86Forward
-  playerctl next && notify-send "NOW PLAYING NEXT SONG: $(playerctl metadata --format "{{ artist }} - {{ album }} - {{ title }}")"
+  playerctl next #&& notify-send "NOW PLAYING NEXT SONG: $(whatIsPlaying | sed 's/Now playing: //g')"
 
 XF86AudioRaiseVolume
-  pactl set-sink-volume 1 +5% && notify-send " VOLUME UP +5%"
+  pactl set-sink-volume 1 +5% && notify-send " VOLUME UP +5% NOW AT $(soundCheck)"
 
 XF86AudioLowerVolume
-  pactl set-sink-volume 1 -5% && notify-send " VOLUME DOWN -5%"
+  pactl set-sink-volume 1 -5% && notify-send " VOLUME DOWN -5% NOW AT $(soundCheck)"
 
 XF86AudioMute
   Mute
