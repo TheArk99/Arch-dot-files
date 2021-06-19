@@ -12,10 +12,10 @@ XF86AudioPlay
 
 
 XF86Back
-  playerctl previous #&& notify-send "NOW PLAYING PREVIOUS SONG: $(whatIsPlaying | sed 's/Now playing: //g')"
+  playerctl previous
 
 XF86Forward
-  playerctl next #&& notify-send "NOW PLAYING NEXT SONG: $(whatIsPlaying | sed 's/Now playing: //g')"
+  playerctl next
 
 XF86AudioRaiseVolume
   pactl set-sink-volume 1 +5% && notify-send " VOLUME UP +5% NOW AT $(soundCheck)"
