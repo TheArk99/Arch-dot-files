@@ -1,12 +1,9 @@
 #!/bin/sh
 
-SINK=$(if [[ $(pactl list short | grep RUNNING | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,') = "" ]]; then
-echo "1"
-else
-pactl list short | grep RUNNING | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,'
-fi)
-pactl set-sink-mute 1 toggle
-mute=$(pacmd list-sinks | awk '/muted/ { print $2 }' | head -n $(( $SINK )) | tail -n 1 | sed 's/muted://g; /^$/ d; s/\s*#.*//g')
+SINK=$(pactl list short | grep alsa_output.pci-0000_0c_00.4.analog-stereo \
+  | sed '/monitor/ d; s,^\([0-9][0-9]*\)[^0-9].*,\1,')
+pactl set-sink-mute "$SINK" toggle
+mute=$(pacmd list-sinks | awk '/muted/ { print $2 }' | head -n $(( $SINK + 1 )) | tail -n 1 | sed 's/muted://g; /^$/ d; s/\s*#.*//g')
 if [ $mute = "yes" ]; then
   notify-send "MUTED AUDIO"
 elif [ $mute = "no" ]; then

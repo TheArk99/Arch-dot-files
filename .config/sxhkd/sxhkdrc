@@ -10,7 +10,6 @@ Scroll_Lock
 XF86AudioPlay
   playerctl play-pause
 
-
 XF86Back
   playerctl previous
 
@@ -18,10 +17,12 @@ XF86Forward
   playerctl next
 
 XF86AudioRaiseVolume
-  pactl set-sink-volume 1 +5% && notify-send " VOLUME UP +5% NOW AT $(soundCheck)"
+  pactl set-sink-volume $(pactl list short | grep alsa_output.pci-0000_0c_00.4.analog-stereo \
+  | sed '/monitor/ d; s,^\([0-9][0-9]*\)[^0-9].*,\1,') +5% && notify-send " VOLUME UP +5% NOW AT $(soundCheck)"
 
 XF86AudioLowerVolume
-  pactl set-sink-volume 1 -5% && notify-send " VOLUME DOWN -5% NOW AT $(soundCheck)"
+  pactl set-sink-volume $(pactl list short | grep alsa_output.pci-0000_0c_00.4.analog-stereo \
+  | sed '/monitor/ d; s,^\([0-9][0-9]*\)[^0-9].*,\1,') -5% && notify-send " VOLUME DOWN -5% NOW AT $(soundCheck)"
 
 XF86AudioMute
   Mute
