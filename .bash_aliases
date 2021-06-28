@@ -50,3 +50,9 @@ alias current-wall='sxiv $(cat $(locate current-wallpapper.txt))'
 
 #alias for doas being sudo so i do not forget doas and instead use sudo
 alias sudo="doas"
+
+
+#alias for drives
+
+#alias for nvme/game drive
+alias df-nvme='df | grep -E "nvme|File"'
