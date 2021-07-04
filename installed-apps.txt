@@ -323,7 +323,7 @@ haskell-zlib
 hicolor-icon-theme
 hidapi
 highlight
-htop
+htim
 http-parser
 hunspell
 hwids
@@ -1036,6 +1036,7 @@ tdb
 tevent
 texinfo
 tree
+tree-sitter
 tslib
 ttf-font-awesome
 tty-clock
