@@ -56,3 +56,12 @@ alias sudo="doas"
 
 #alias for nvme/game drive
 alias df-nvme='df | grep -E "nvme|File"'
+
+#alias for checking open ports with os names
+alias openPs='sudo nmap -O 10.0.0.51/24 --open'
+
+#alias to show open ports and everything with them
+alias AOPS='nmap -A -T4 10.0.0.51/24 --open'
+
+#alias to show mom vonroblilities
+alias momMAC='nmap 10.0.0.11 -A'
