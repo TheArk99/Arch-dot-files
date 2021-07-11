@@ -122,9 +122,11 @@ imlib2
 iniparser
 jasper
 jbig2dec
+jdk-openjdk
 john
 jp2a
 jq
+jre-openjdk
 keepassxc
 l-smash
 lame
