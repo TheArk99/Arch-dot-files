@@ -585,6 +585,7 @@ xclip
 xdg-dbus-proxy
 xdg-user-dirs
 xdg-utils
+xdotool
 xf86-video-vesa
 xmlsec
 xorg-bdftopcf
