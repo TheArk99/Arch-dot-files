@@ -517,6 +517,7 @@ rav1e
 rawtherapee
 re2
 recode
+rofi
 rubberband
 run-parts
 rxvt-unicode
